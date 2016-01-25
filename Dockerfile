@@ -7,5 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV WORKER_NAME soletic
 ENV WORKER_UID 10001
 
+VOLUME /var/log/mongodb
+
 COPY start.sh /entrypoint.sh
 RUN chmod u+x /entrypoint.sh
