@@ -17,7 +17,7 @@ if [ "$1" = 'mongod' ]; then
         set -- $numa "$@"
     fi
 
-    exec gosu mongodb "$@"
+    exec gosu mongodb mongod --config /etc/mongod.conf --auth
 fi
 
 exec "$@"

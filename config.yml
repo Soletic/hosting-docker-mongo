@@ -1,0 +1,13 @@
+net:
+   port: 27017
+storage:
+   dbPath: /data/db
+systemLog:
+   destination: file
+   path: "/var/log/mongodb/mongod.log"
+   logAppend: true
+storage:
+   journal:
+      enabled: true
+security:
+   authorization: enabled
